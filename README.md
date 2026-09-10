@@ -11,7 +11,7 @@ Klasifikasi biner (Normal vs Pneumonia) dari citra X-ray dada, menggunakan datas
 | **Model final** | **Custom CNN** (arsitektur dari referensi `chest-x-ray-images-pneumonia-using-cnn.ipynb`) |
 | **Metrik prioritas** | **Recall** (sensitivitas kelas Pneumonia) — bukan accuracy |
 | **Notebook** | [`notebooks/pneumonia-cls.ipynb`](notebooks/pneumonia-cls.ipynb) |
-| **Deployment** | [`app/app.py`](app/app.py) — Streamlit |
+| **Deployment** | [`app/app.py`](app/app.py) — Streamlit · **[Live demo](https://chest-xray-pneumonia-classification.streamlit.app)** |
 
 Alasan recall diprioritaskan: ini konteks skrining medis, false negative (pneumonia terlewat) jauh lebih berbahaya daripada false positive, dan dataset timpang (~73% kelas Pneumonia) membuat accuracy menyesatkan.
 
@@ -92,7 +92,11 @@ chest-xray-pneumonia/
 3. Run All — dataset otomatis terunduh via `kagglehub` tanpa API key. Cell terakhir mengekspor model terbaik ke `pneumonia_model.keras`.
 4. Download hasil export, taruh di `app/models/pneumonia_model.keras`.
 
-### Streamlit app (lokal)
+### Streamlit app
+
+Live: **https://chest-xray-pneumonia-classification.streamlit.app**
+
+Menjalankan lokal:
 
 ```bash
 pip install -r requirements.txt
