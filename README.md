@@ -77,9 +77,9 @@ chest-xray-pneumonia/
 │   └── models/
 │       └── pneumonia_model.keras
 ├── .streamlit/
-│   └── config.toml             ← tema warna app (hijau medis)
+│   └── config.toml             
 ├── requirements.txt
-├── runtime.txt                 ← python-3.11 (samakan dengan environment training)
+├── runtime.txt                 ← python-3.11 
 └── README.md
 ```
 
